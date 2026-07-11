@@ -1,0 +1,24 @@
+### Variables
+@host = http://localhost:4004
+
+
+### Check Test Service Metadata
+GET {{host}}/test/$metadata
+
+
+### Simulate AI Usage
+POST {{host}}/test/simulateAI
+Content-Type: application/json
+
+{
+    "agent": "InvoiceExtractionAgent",
+    "operation": "ExtractInvoice"
+}
+
+
+### Read AI Usage Records from Plugin
+GET {{host}}/ai-tracker/Usage
+
+
+### Read Test Projection of AI Usage
+GET {{host}}/test/AIUsageTest
