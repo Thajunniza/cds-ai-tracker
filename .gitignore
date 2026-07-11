@@ -1,0 +1,79 @@
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+
+# =========================
+# CAP Build Artifacts
+# =========================
+.gen/
+srv/src/gen/
+db/src/gen/
+mta_archives/
+*.mtar
+
+
+# =========================
+# CDS / CAP Local Files
+# =========================
+.cdsrc-private.json
+cds.env.json
+default-env.json
+
+
+# =========================
+# Local Databases
+# =========================
+*.sqlite
+*.db
+
+
+# =========================
+# Test Coverage
+# =========================
+coverage/
+.nyc_output/
+
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# IDE Files
+# =========================
+.vscode/
+.idea/
+*.iml
+
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp
+*.swp
+*.swo
